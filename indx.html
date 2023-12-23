@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+      }
+
+      .navbar {
+        background-color: #333;
+        overflow: hidden;
+        position: relative;
+        transition: height 0.5s ease 0.2s; /* Add transition property */
+      }
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .navbar a.icon {
+        display: none;
+      }
+
+      .navbar a.cancel-icon {
+        display: none;
+      }
+
+      @media screen and (max-width: 600px) {
+        .navbar a:not(:first-child) {
+          display: none;
+        }
+
+        .navbar a.icon {
+          float: right;
+          display: block;
+        }
+
+        .navbar.responsive a.icon {
+          float: right;
+          display: none;
+        }
+
+        .navbar a.cancel-icon {
+          display: none;
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 14px 16px;
+        }
+        .navbar.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar" id="myNavbar">
+      <a href="#home" onclick="closeNavbar()">Home</a>
+      <a href="#services" onclick="closeNavbar()">Services</a>
+      <a href="#feature" onclick="closeNavbar()">Feature</a>
+      <a href="#product" onclick="closeNavbar()">Product</a>
+      <a href="#testimonial" onclick="closeNavbar()">Testimonial</a>
+      <a href="#FAQ" onclick="closeNavbar()">FAQ</a>
+      <a href="#" onclick="closeNavbar()">
+        <button class="btn btn-1">Login</button>
+      </a>
+      <a href="#" onclick="closeNavbar()">
+        <button class="btn">Sign up</button>
+      </a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+        <i class="fa-solid fa-bars" id="fa_bars"></i>
+      </a>
+      <a
+        href="javascript:void(0);"
+        class="cancel-icon"
+        onclick="toggleNavbar()"
+      >
+        <i class="fa-solid fa-xmark" id="fa_xmark"></i>
+      </a>
+    </div>
+
+    <script>
+      function toggleNavbar() {
+        var x = document.getElementById("myNavbar");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+
+      function closeNavbar() {
+        var x = document.getElementById("myNavbar");
+        if (x.className.includes("responsive")) {
+          x.className = "navbar";
+        }
+      }
+    </script>
+  </body>
+</html>

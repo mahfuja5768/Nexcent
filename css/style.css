@@ -24,6 +24,7 @@ p {
   color: #717171;
   line-height: 1.2rem;
   margin-bottom: 15px;
+  /* text-align: justify; */
 }
 ul li {
   list-style: none;
@@ -33,7 +34,7 @@ ul li a {
   color: black;
 }
 .btn {
-    padding: 8px 15px;
+    padding: 14px 32px;
     border: none;
     background-color: #327c34;
     color: white;
@@ -77,15 +78,57 @@ header, .helping-section , .about-section, demo-section{
   background-color: #f5f7fa;
   padding: 0 10px;
 }
-.navbar {
+/* .navbar {
   padding: 30px 0px;
-}
-.navs li {
+} */
+/* .navs li {
   margin-right: 5px;
+} */
+
+/* nav */
+.navbar {
+  background-color: #fff;
+  padding: 15px 0px;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  position: absolute;
+  transition: height 0.5s ease 0.2s;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-position{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navs a{
+  margin-left: 40px;
+}
+.btns a{
+  margin-left: 10px;
+}
+
+.navbar a.icon {
+  display: none;
+}
+
+.navbar a.cancel-icon {
+  display: none;
+}
+.big-hide {
+  display: none;
 }
 /* banner */
 .banner{
     padding: 50px 0;
+    margin-top: 50px;
 }
 .banner div, .pixelgrade-part div{
     width: 50%;
@@ -199,6 +242,8 @@ margin-top: 50px;
 /* demo-section */
 .demo-section{
   text-align: center;
+  background-color: #f5f7fa;
+  padding: 50px 0px;
 }
 .demo-section h1{
   font-size: 50px;
@@ -209,17 +254,23 @@ footer {
   background-color: #263238;
   color: white;
   padding: 130px 0;
+  color: white;
+}
+footer p{
+  color: #d4d5d6;
 }
 .logo{
   background-color: #fff;
   width: 60%;
   padding: 5px 10px;
+  margin-bottom: 30px;
 }
 .footer-content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 5px;
   margin: 0 auto;
+ 
 }
 .links h2{
   margin-bottom: 10px;

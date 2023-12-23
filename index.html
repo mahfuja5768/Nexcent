@@ -10,6 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Belanosima:wght@400;700&family=Merriweather+Sans:wght@400;700&family=Merriweather:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+     <!-- font-awesome -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   />
+   <!-- css-->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <title>Nexcent</title>
@@ -17,20 +26,49 @@
   <body>
     <!-- header -->
     <header>
-      <div class="container">
-        <div class="navbar">
-          <ul class="navs flex-3">
-            <img src="./assets/icons/Logo.png" alt="" />
-            <li><a href="">Home</a></li>
-            <li><a href="">Service</a></li>
-            <li><a href="">Feature</a></li>
-            <li><a href="">Product</a></li>
-            <li><a href="">Testimonial</a></li>
-            <li><a href="">FAQ</a></li>
+
+      <div class="navbar" id="myNavbar">
+          <div class="container">
+            <link  href="#home"><img class="big-hide" src="./assets/icons/Logo.png" alt="" /></link>
+          <div class="nav-position">
+            <div ><a class="small-hide" href="#home"><img  src="./assets/icons/Logo.png" alt="" /></a></div>
+           <div class="navs"> <a href="#home" onclick="closeNavbar()">Home</a>
+            <a href="#services" onclick="closeNavbar()">Services</a>
+            <a href="#feature" onclick="closeNavbar()">Feature</a>
+            <a href="#product" onclick="closeNavbar()">Product</a>
+            <a href="#testimonial" onclick="closeNavbar()">Testimonial</a>
+            <a href="#FAQ" onclick="closeNavbar()">FAQ</a></div>
+         <div>
+         <div class="btns">
+          <a href="#" onclick="closeNavbar()">
             <button class="btn btn-1">Login</button>
+          </a>
+          <a href="#" onclick="closeNavbar()">
             <button class="btn">Sign up</button>
-          </ul>
+          </a>
+         </div>
+         
+         </div>
+       
+          </div>
+          <div class="icons">
+            <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+              <i class="fa-solid fa-bars" id="fa_bars"></i>
+            </a>
+            <a
+              href="javascript:void(0);"
+              class="cancel-icon"
+              onclick="toggleNavbar()"
+            >
+              <i class="fa-solid fa-xmark" id="fa_xmark"></i>
+            </a>
+          </div>
         </div>
+      </div>
+      <div class="container">
+
+        
+
         <div class="banner flex-3">
           <div class="banner-text">
             <h1>Lessons and insights from 8 years</h1>
@@ -213,7 +251,8 @@
        <!-- demo-section -->
       <section class="demo-section">
         <h1>Pellentesque suscipit <br> fringilla libero eu.</h1>
-        <button class="btn">Get a Demo</button>
+        <button class="btn">Get a Demo <span><i class="fa-solid fa-arrow-right"></i>
+        </i></span></button>
       </section>
 
       <!-- footer -->
@@ -222,10 +261,12 @@
           <div class="footer-content">
               <div class="logo-footer">
                 <h1 class="logo"><img src="./assets/icons/Logo.png" alt=""></h1>
+                <p>This landing page features design elements from the Figma Community</p>
                 <p>
                   Copyright © 2020 Nexcent ltd.
                 </p>
                 <p>All rights reserved</p>
+                
                 <div class="social-icons footer-icons">
                   <img class="icon-bg" src="icons/facebook-fill.png" alt="" />
                   <img class="icon-bg" src="icons/instagram-fill.png" alt="" />
@@ -256,5 +297,6 @@
       </footer>
 
     </main>
+    <script src="./main.js"></script>
   </body>
 </html>
