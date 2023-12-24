@@ -6,6 +6,9 @@
   h1 {
     font-size: 25px;
   }
+  .grid{
+    gap: 30px;
+  }
   /* header */
   .navbar a , .small-hide{
     display: none;
