@@ -4,12 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- google-font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Belanosima:wght@400;700&family=Merriweather+Sans:wght@400;700&family=Merriweather:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
      <!-- font-awesome -->
      <link
      rel="stylesheet"
@@ -18,6 +15,7 @@
      crossorigin="anonymous"
      referrerpolicy="no-referrer"
    />
+   <link rel="shortcut icon" href="./assets/icons/logo-icon.png" type="image/x-icon">
    <!-- css-->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
@@ -65,11 +63,12 @@
           </div>
         </div>
       </div>
-      <div class="container">
-
-        
-
+      
+      
+      <div class="banner-bg ">
+        <div class="container">
         <div class="banner flex-3">
+
           <div class="banner-text">
             <h1>Lessons and insights from 8 years</h1>
             <p>
@@ -82,7 +81,7 @@
             <img src="./assets/images/Illustration.png" alt="" />
           </div>
         </div>
-      </div>
+      </div></div>
     </header>
     <main>
       <!-- clients -->
@@ -240,9 +239,22 @@
             <h1>Caring is the new marketing</h1>
             <p>The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
             <div class="cards grid">
-              <img src="./assets/images/1.png" alt="">
-              <img src="./assets/images/2.png" alt="">
-              <img src="./assets/images/3.png" alt="">
+              <div>
+                <img src="./assets/images/1.png" alt="">
+                <div class="lit-card">
+                  <p>Creating Streamlined Safeguarding Processes with OneRen</p>
+                  <link class="lit-card-link">Readmore <span><i class="fa-solid fa-arrow-right"></i>
+                  </i></span></link>
+                </div>
+              </div>
+              <div>
+
+                <img src="./assets/images/2.png" alt="">
+              </div>
+              <div>
+                <img src="./assets/images/3.png" alt="">
+
+              </div>
             </div>
           </div>
         </div>
@@ -260,7 +272,10 @@
         <div class="container">
           <div class="footer-content">
               <div class="logo-footer">
-                <h1 class="logo"><img src="./assets/icons/Logo.png" alt=""></h1>
+               <div class="logo-part">
+                <h1 class="logo"><img src="./assets/icons/logo-icon.png" alt=""></h1>
+                <span>Nexcent</span>
+               </div>
                 <p>This landing page features design elements from the Figma Community</p>
                 <p>
                   Copyright © 2020 Nexcent ltd.
@@ -288,9 +303,10 @@
                 <p>Parent Community</p>
                 <p>Blog</p>
               </div>
-              <div class="contact">
+              <div class="contact ">
                 <h2>Stay up to date</h2>
                 <input type="text" placeholder="Your email address">
+                <i class="fa-regular fa-paper-plane"></i>
               </div>
             </div>
         </div>

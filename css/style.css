@@ -2,14 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 body {
-  font-family: "Alkatra", cursive;
-  font-family: "Belanosima", sans-serif;
-  font-family: "Merriweather", serif;
-  font-family: "Merriweather Sans", sans-serif;
-  font-family: "Poppins", sans-serif;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 .container {
   max-width: 1240px;
@@ -44,6 +40,7 @@ ul li a {
 .btn:hover {
     background-color: #C8E6C9;
     color: #327c34;
+    cursor: pointer;
 }
 .btn-1{
     border: none;
@@ -71,20 +68,15 @@ ul li a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+  align-items: center;
 }
 
 /* header */
-header, .helping-section , .about-section, demo-section{
+.banner-bg , .helping-section , .about-section, demo-section{
   background-color: #f5f7fa;
+  
   padding: 0 10px;
 }
-/* .navbar {
-  padding: 30px 0px;
-} */
-/* .navs li {
-  margin-right: 5px;
-} */
-
 /* nav */
 .navbar {
   background-color: #fff;
@@ -109,10 +101,10 @@ header, .helping-section , .about-section, demo-section{
   align-items: center;
 }
 .navs a{
-  margin-left: 40px;
+  margin-left: 20px;
 }
 .btns a{
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .navbar a.icon {
@@ -163,6 +155,7 @@ margin-top: 50px;
 /* system-section */
 .system-section{
   text-align: center;
+  margin: 40px 0;
 }
 .system-section h1{
   width: 50%;
@@ -192,7 +185,7 @@ margin-top: 50px;
 }
 /* helping-section */
 .helping-section{
-  padding: 50px 0;
+  padding: 64px 0;
 }
 .part-2 .part-2-items{
   margin-top: 30px;
@@ -237,6 +230,20 @@ margin-top: 50px;
 /* marketing-section */
 .marketing-section{
   text-align: center;
+  margin: 50px 0;
+}
+.marketing-section p{
+  text-align: center;
+  width: 50%;
+  margin: 20px auto 25px;
+}
+.lit-card{
+  padding: 10px;
+  width: 280px;
+  box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0.40);
+}
+.lit-card-link{
+  color: #4CAF4F;
 }
 
 /* demo-section */
@@ -259,11 +266,16 @@ footer {
 footer p{
   color: #d4d5d6;
 }
-.logo{
-  background-color: #fff;
-  width: 60%;
-  padding: 5px 10px;
-  margin-bottom: 30px;
+.logo-part{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.logo-part span{
+  font-size: 42px;
+  font-weight: bold;
 }
 .footer-content {
   display: grid;
@@ -275,10 +287,18 @@ footer p{
 .links h2{
   margin-bottom: 10px;
 }
+.contact{
+  position: relative;
+}
 .contact input{
   margin-top: 10px;
   padding: 10px;
   border: none;
   border-radius: 5px;
   color: white;
+  background: #6161617e;
+}
+.fa-paper-plane{
+margin-left: -30px;
+font-size: 13px;
 }
